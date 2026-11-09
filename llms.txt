@@ -1,0 +1,46 @@
+# MarketingMN
+
+> MarketingMN is a Minnesota marketing agency and growth partner for established businesses and organizations. The site covers strategic marketing, website strategy, SEO and demand generation, managed website systems, measurement, and company information.
+
+## Core Pages
+
+- [Home](https://marketingmn.com/): Overview of MarketingMN's strategic marketing approach, capabilities, Minnesota focus, growth philosophy, and consultation offering.
+- [Services](https://marketingmn.com/services/): Overview of strategic growth advisory, website strategy and digital experience, SEO and demand generation, and managed website systems.
+- [Web Strategy](https://marketingmn.com/web-strategy/): Website strategy for service businesses in Minnesota, including information architecture, user experience, conversion paths, website development, SEO-focused migrations, and implementation.
+- [SEO & Growth](https://marketingmn.com/seo-growth/): SEO, local search, content authority, search strategy, market intelligence, technical SEO, and demand generation focused on qualified visibility.
+- [Managed Systems](https://marketingmn.com/managed-systems/): Managed website infrastructure covering hosting, proactive updates, security, backups, technical support, performance monitoring, SEO continuity, and ongoing improvement.
+- [Results](https://marketingmn.com/results/): Marketing measurement framework covering strategic clarity, website performance, search visibility, local presence, lead quality, and digital infrastructure.
+- [About](https://marketingmn.com/about/): Information about MarketingMN's Minnesota focus, experience, working principles, and approach to strategic marketing.
+- [Contact](https://marketingmn.com/contact/): Contact and consultation information for organizations interested in working with MarketingMN.
+
+## Policies and Accessibility
+
+- [Privacy Policy](https://marketingmn.com/privacy/): Privacy information for visitors and users of the MarketingMN website.
+- [Terms and Conditions](https://marketingmn.com/terms/): Terms governing use of the MarketingMN website and its content.
+- [Accessibility](https://marketingmn.com/accessibility/): Accessibility information and the site's commitment to providing an accessible web experience.
+
+## Primary Topics
+
+MarketingMN focuses on:
+- Minnesota marketing strategy
+- Strategic growth advisory
+- Website strategy
+- Website design and development
+- SEO and organic search
+- Local SEO
+- Search demand generation
+- Content strategy and content authority
+- Website management
+- Website security and maintenance
+- Digital infrastructure
+- Marketing measurement
+- Conversion-focused website strategy
+- Service-business marketing
+
+## Organization
+
+MarketingMN serves established Minnesota businesses and organizations seeking a connected approach to strategy, websites, search visibility, content, technology, and growth.
+
+## Sitemap
+
+- [XML Sitemap](https://marketingmn.com/sitemap.xml)
