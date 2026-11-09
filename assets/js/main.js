@@ -50,22 +50,26 @@ document.addEventListener('DOMContentLoaded', function () {
     firstFaq.querySelector('.faq-question').click();
   }
 
-  /* Consultation request form */
+  /* Consultation request form: checks the fields, then submits to the lead
+     handler, which sends the visitor back here with ?sent=1 (or ?sent=0). */
   var consultForm = document.getElementById('consultation-form');
   if (consultForm) {
     consultForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-
       if (!consultForm.checkValidity()) {
+        e.preventDefault();
         consultForm.reportValidity();
         return;
       }
+      var btn = consultForm.querySelector('.form-submit');
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+    });
 
-      var card = consultForm.closest('.form-card');
+    var sent = new URLSearchParams(window.location.search).get('sent');
+    var card = consultForm.closest('.form-card');
+    if (sent === '1' && card) {
       var heading = card.querySelector('h3');
       if (heading) heading.style.display = 'none';
       consultForm.style.display = 'none';
-
       var success = document.createElement('div');
       success.className = 'form-success';
       success.innerHTML =
@@ -73,6 +77,15 @@ document.addEventListener('DOMContentLoaded', function () {
         '<h4>Thanks &mdash; your inquiry is on its way.</h4>' +
         '<p>We review every request personally and will follow up soon to schedule your Growth Strategy Consultation.</p>';
       card.appendChild(success);
-    });
+      card.scrollIntoView({ block: 'center' });
+    } else if (sent === '0' && card) {
+      var err = document.createElement('p');
+      err.className = 'form-error';
+      err.setAttribute('role', 'alert');
+      err.style.cssText = 'color:#ff6b4a;margin:0 0 16px;font-weight:600';
+      err.textContent = 'Sorry, your inquiry could not be sent. Please check the form and try again, or call us.';
+      consultForm.insertBefore(err, consultForm.firstChild);
+      card.scrollIntoView({ block: 'center' });
+    }
   }
 });
